@@ -70,7 +70,8 @@ bool telnetClient::sendCommand(const char* cmd){
 		return this->waitPrompt();
 	}
 	else{
-		this->disconnect();
+		//this->disconnect();
+		return false;
 	}
 	
 }
